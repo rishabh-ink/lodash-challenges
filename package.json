@@ -1,0 +1,16 @@
+{
+  "name": "lodash-challenges",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "test": "react-scripts test --env=jsdom",
+    "test:coverage": "yarn test --coverage",
+    "test:debug": "yarn test --inspect-brk --runInBand"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.10"
+  },
+  "dependencies": {
+    "react-scripts": "^1.1.4"
+  }
+}
