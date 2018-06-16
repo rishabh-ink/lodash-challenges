@@ -1,48 +1,50 @@
-const _ = require('lodash');
-const assert = require('assert');
+// @flow
 
-const drop = require('../../src/array/drop');
+import _ from 'lodash';
+import assert from 'assert';
+
+import drop from '../../src/array/drop';
 
 describe("Lodash", () => {
   describe("Array", () => {
     /**
      * @see https://lodash.com/docs/4.17.10#drop
      */
-    describe("_.drop(array, numberOfElementsToDrop)", () => {
+    describe("_.drop(array, howMany)", () => {
       const sampleInputs = [
         {
           array: [1, 2, 3],
-          numberOfElementsToDrop: undefined,
+          howMany: undefined,
         },
         {
           array: [4, 5, 6],
-          numberOfElementsToDrop: null,
+          howMany: null,
         },
         {
           array: [7, 8, 9],
-          numberOfElementsToDrop: 0,
+          howMany: 0,
         },
         {
           array: [10, 11, 12],
-          numberOfElementsToDrop: 2,
+          howMany: 2,
         },
         {
           array: [13, 14, 15],
-          numberOfElementsToDrop: 5,
+          howMany: 5,
         },
         {
           array: ['a', 'b', 'c', 'd', 'e'],
-          numberOfElementsToDrop: 2,
+          howMany: 2,
         },
       ];
 
       sampleInputs.forEach((sampleInput, index) => {
-        it(`drop(${JSON.stringify(sampleInput.array)}, ${JSON.stringify(sampleInput.numberOfElementsToDrop)})`, () => {
+        it(`drop(${JSON.stringify(sampleInput.array)}, ${JSON.stringify(sampleInput.howMany)})`, () => {
           // Arrange
-          const expectedResult = _.drop(sampleInput.array, sampleInput.numberOfElementsToDrop);
+          const expectedResult = _.drop(sampleInput.array, sampleInput.howMany);
 
           // Act
-          const actualResult = drop(sampleInput.array, sampleInput.numberOfElementsToDrop);
+          const actualResult = drop(sampleInput.array, sampleInput.howMany);
 
           // Assert
           expect(actualResult).toEqual(expectedResult);

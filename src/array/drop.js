@@ -1,11 +1,10 @@
-const drop = (array, n = 1) => {
-  if (Number.isInteger(n)) {
-    return array.filter(
-      (element, index) => index >= n,
-    );
-  }
+// @flow
 
-  return array;
-};
-
-module.exports = drop;
+/**
+ * @param array
+ * @param howMany
+ * @see https://lodash.com/docs/4.17.10#drop
+ */
+export default function drop<T>(array: Array<T>, howMany: ?number = 1): Array<T> {
+  return array.filter((element: T, index: number) => index >= Number(howMany));
+}
