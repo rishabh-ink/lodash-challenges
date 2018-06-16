@@ -5,7 +5,8 @@
   "scripts": {
     "test": "react-scripts test --env=jsdom",
     "test:coverage": "yarn test --coverage",
-    "test:debug": "yarn test --inspect-brk --runInBand"
+    "test:debug": "yarn test --inspect-brk --runInBand",
+    "typecheck": "flow check"
   },
   "devDependencies": {
     "husky": "^0.14.3",
@@ -14,6 +15,7 @@
     "prettier": "^1.13.5"
   },
   "dependencies": {
+    "flow-bin": "^0.74.0",
     "react-scripts": "^1.1.4"
   },
   "lint-staged": {
