@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - 8.11.3
+git:
+  depth: 10
+before_script:
+  - yarn
+script:
+  - yarn typecheck
+  - yarn test:coverage
