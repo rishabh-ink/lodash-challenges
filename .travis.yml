@@ -8,3 +8,4 @@ before_script:
 script:
   - yarn typecheck
   - yarn test:coverage
+  - yarn test:report
