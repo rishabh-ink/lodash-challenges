@@ -1,7 +1,7 @@
 lodash-challenges
 -----------------
 
-[![Travis](https://img.shields.io/travis/rishabhsrao/lodash-challenges.svg?longCache=true&style=for-the-badge "Build status")](https://travis-ci.org/rishabhsrao/lodash-challenges)
+[![Travis](https://img.shields.io/travis/rishabhsrao/lodash-challenges.svg?logo=travis&longCache=true&style=for-the-badge "Build status")](https://travis-ci.org/rishabhsrao/lodash-challenges)
 [![Coveralls](https://img.shields.io/coveralls/rishabhsrao/lodash-challenges.svg?longCache=true&style=for-the-badge "Test coverage status")](https://coveralls.io/r/rishabhsrao/lodash-challenges)
 [![Maintainability](https://api.codeclimate.com/v1/badges/a8990c0a4f2df8ada369/maintainability)](https://codeclimate.com/github/rishabhsrao/lodash-challenges/maintainability)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg?longCache=true&style=for-the-badge&?link=https://choosealicense.com/&link=https://choosealicense.com/licenses/mit/)
